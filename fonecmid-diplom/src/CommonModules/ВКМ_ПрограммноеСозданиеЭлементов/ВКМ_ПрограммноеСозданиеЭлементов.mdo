@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:CommonModule xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="cbbb0828-c995-4082-8927-e8d4a6e933fd">
+  <name>ВКМ_ПрограммноеСозданиеЭлементов</name>
+  <synonym>
+    <key>ru</key>
+    <value>Программное создание элементов (ВКМ)</value>
+  </synonym>
+  <server>true</server>
+  <externalConnection>true</externalConnection>
+  <clientOrdinaryApplication>true</clientOrdinaryApplication>
+</mdclass:CommonModule>
