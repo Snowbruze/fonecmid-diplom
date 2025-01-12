@@ -9,4 +9,9 @@
   <content>CommonModule.ВКМ_ПрограммноеСозданиеЭлементов</content>
   <content>DefinedType.ВКМ_Денежный</content>
   <content>DefinedType.ВКМ_Количество</content>
+  <content>Document.ВКМ_ОбслуживаниеКлиента</content>
+  <content>Role.ВКМ_ДобавлениеИзменениеВыполненныеРаботы</content>
+  <content>Catalog.ВКМ_ОбслуживаниеКлиентаПрисоединенныеФайлы</content>
+  <content>AccumulationRegister.ВКМ_ВыполненныеКлиентуРаботы</content>
+  <content>CommonModule.ВКМ_Телеграм</content>
 </mdclass:Subsystem>
