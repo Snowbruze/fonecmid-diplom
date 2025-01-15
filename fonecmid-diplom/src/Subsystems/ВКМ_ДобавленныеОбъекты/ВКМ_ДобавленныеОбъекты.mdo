@@ -10,8 +10,13 @@
   <content>DefinedType.ВКМ_Денежный</content>
   <content>DefinedType.ВКМ_Количество</content>
   <content>Document.ВКМ_ОбслуживаниеКлиента</content>
-  <content>Role.ВКМ_ДобавлениеИзменениеВыполненныеРаботы</content>
+  <content>Role.ВКМ_ДобавлениеИзменениеОбслуживаниеКлиентов</content>
   <content>Catalog.ВКМ_ОбслуживаниеКлиентаПрисоединенныеФайлы</content>
   <content>AccumulationRegister.ВКМ_ВыполненныеКлиентуРаботы</content>
   <content>CommonModule.ВКМ_Телеграм</content>
+  <content>Constant.ВКМ_ТокенУправленияТелеграммБотом</content>
+  <content>Constant.ВКМ_ИдентификаторГруппыДляОповещения</content>
+  <content>Constant.ВКМ_НоменклатураАбонентскаяПлата</content>
+  <content>DataProcessor.ВКМ_МассовоеСозданиеАктов</content>
+  <content>Role.ВКМ_ИспользованиеОбработкиМассовоеСозданиеДокументов</content>
 </mdclass:Subsystem>

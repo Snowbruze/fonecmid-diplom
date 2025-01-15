@@ -410,4 +410,25 @@
       <fullTextSearch>Use</fullTextSearch>
     </attributes>
   </tabularSections>
+  <templates uuid="ddeac0ff-8c1b-42f7-8f42-8263dbbc3b1d">
+    <name>ПФ_MXL_Акт</name>
+    <synonym>
+      <key>ru</key>
+      <value>Акт об оказаний услуг (вкм)</value>
+    </synonym>
+  </templates>
+  <templates uuid="829b0da0-e284-4896-bda7-06cefc8dd48d">
+    <name>ПФ_MXL_Акт1</name>
+    <synonym>
+      <key>ru</key>
+      <value>Акт об оказаний услуг (вкм)</value>
+    </synonym>
+  </templates>
+  <templates uuid="85a27154-9ea3-43b8-a948-a49b92b63f09">
+    <name>ПФ_MXL_Тест</name>
+    <synonym>
+      <key>ru</key>
+      <value>П ф MXL тест</value>
+    </synonym>
+  </templates>
 </mdclass:Document>
