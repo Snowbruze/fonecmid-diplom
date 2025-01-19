@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DataProcessor xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="a918a6d5-1280-44af-abba-023a18ce6189">
+  <producedTypes>
+    <objectType typeId="07dca8d7-6d3f-485e-8a9a-c94007a0c8e1" valueTypeId="62477773-ebac-400c-a4d5-de7f7fb8cffb"/>
+    <managerType typeId="6291b6f8-31f8-4d07-9cad-a66343142cd7" valueTypeId="b184ff3e-24fa-4510-b614-25f80ea2c576"/>
+  </producedTypes>
+  <name>ВКМ_УтверждениеГрафикаРаботы</name>
+  <synonym>
+    <key>ru</key>
+    <value>Утверждение графика работы (вкм)</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultForm>DataProcessor.ВКМ_УтверждениеГрафикаРаботы.Form.Форма</defaultForm>
+  <attributes uuid="ad192d35-abd7-4926-8b0b-08f767b86a48">
+    <name>График</name>
+    <synonym>
+      <key>ru</key>
+      <value>График</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ВКМ_ГрафикиРаботы</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+  </attributes>
+  <attributes uuid="328fcfbf-6042-4d05-8d64-24245f93d1a0">
+    <name>Период</name>
+    <synonym>
+      <key>ru</key>
+      <value>Период</value>
+    </synonym>
+    <type>
+      <types>StandardPeriod</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+  </attributes>
+  <forms uuid="502c35bd-2c0d-4fff-8ffd-aa8ab7979cbf">
+    <name>Форма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:DataProcessor>

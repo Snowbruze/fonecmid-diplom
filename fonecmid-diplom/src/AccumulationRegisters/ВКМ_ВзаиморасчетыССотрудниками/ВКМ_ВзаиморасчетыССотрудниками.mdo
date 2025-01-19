@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:AccumulationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="187d49f5-9874-458e-933c-e1bd0acd0f72">
+  <producedTypes>
+    <selectionType typeId="cb038092-49dc-47f2-aa33-50c946bcd1af" valueTypeId="a3ee9535-ebb0-4c1b-968c-a86b0156b77b"/>
+    <listType typeId="e08594a8-bb34-455f-ad5f-90ef419f7ad5" valueTypeId="5aece461-c391-4a28-b727-562a19622d65"/>
+    <managerType typeId="a7fedf84-d2fa-43f7-ab45-5ce350fe2361" valueTypeId="6ff20155-a129-48c1-a511-6b2bb795d517"/>
+    <recordSetType typeId="dfac4249-5d43-41ba-bc1d-038a3abe61f5" valueTypeId="9a777e01-c801-41ab-994e-6f15f7fd8cc9"/>
+    <recordKeyType typeId="ae29d0f1-a573-40dd-afdc-ba1a9282483a" valueTypeId="61083d76-34a8-424c-8a5d-b2f7230547a6"/>
+    <recordType typeId="0be7d721-7338-4c56-88d7-66b689fd027b" valueTypeId="4ab24db8-fa96-45ee-a771-f04fa2f07f4f"/>
+  </producedTypes>
+  <name>ВКМ_ВзаиморасчетыССотрудниками</name>
+  <synonym>
+    <key>ru</key>
+    <value>Взаиморасчеты с сотрудниками (вкм)</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <enableTotalsSplitting>true</enableTotalsSplitting>
+  <resources uuid="d6123344-04c1-416e-af80-f7bbea642e7c">
+    <name>Сумма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Сумма</value>
+    </synonym>
+    <type>
+      <types>DefinedType.ВКМ_Денежный</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </resources>
+  <dimensions uuid="4dff76ac-20bd-45f7-b47a-6b88fdf8662c">
+    <name>Сотрудник</name>
+    <synonym>
+      <key>ru</key>
+      <value>Сотрудник</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Пользователи</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+</mdclass:AccumulationRegister>

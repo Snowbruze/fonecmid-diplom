@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:ChartOfCalculationTypes xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="b53ad713-0668-4f3e-a636-4fe0b2f7ff9a">
+  <producedTypes>
+    <objectType typeId="139cb84c-ba5f-4a55-924f-f26be427e937" valueTypeId="77e94406-b73c-4cf8-b3c5-5b8ee8747282"/>
+    <refType typeId="676f0153-549b-46d5-b7d4-6b486b158d59" valueTypeId="7097ffee-5ee2-4392-b476-73ac68897762"/>
+    <selectionType typeId="62bace82-9396-4d13-903a-f32a83f61800" valueTypeId="0ebee6e8-eed5-4d31-8bad-13e411c53bf5"/>
+    <listType typeId="3f3d0f85-3bf3-4a4c-817a-f7d8f7b079b6" valueTypeId="5a0f636d-6d74-428d-a522-c3df1730cb0d"/>
+    <managerType typeId="e15272a7-49c7-4d15-a15d-68c1521932a7" valueTypeId="d67d773f-018e-44fa-b2c1-612c01a762a1"/>
+    <displacingCalculationTypesType typeId="df2679ee-4978-4aa5-93eb-3c0243dbd925" valueTypeId="98cbf07e-1800-4300-94f1-e041bf9017fa"/>
+    <displacingCalculationTypesRowType typeId="9fe60585-830a-4bb6-bb36-b2d493a6c646" valueTypeId="428a83c5-bb64-447e-be15-ef114cdf83fb"/>
+    <baseCalculationTypesType typeId="17586fe3-0435-4649-90aa-eff75ccb034f" valueTypeId="c9b8b3e4-c971-45f6-83b5-43e8f4582135"/>
+    <baseCalculationTypesRowType typeId="66261368-c3cc-492c-b765-0a1afac542ad" valueTypeId="2214d7c5-d554-49ff-8fe0-01dd5fb11552"/>
+    <leadingCalculationTypesType typeId="99b9dce8-d16a-4bd2-9b8d-d9ed24928449" valueTypeId="3914f4b8-f217-415f-8b3e-89ff2ff25a75"/>
+    <leadingCalculationTypesRowType typeId="70ac5423-c046-4980-b3c8-cdbc231469ec" valueTypeId="643b55cb-a7af-490f-843b-c94b560ee43d"/>
+  </producedTypes>
+  <name>ВКМ_ОсновныеНачисления</name>
+  <synonym>
+    <key>ru</key>
+    <value>Основные начисления (вкм)</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>ChartOfCalculationTypes.ВКМ_ОсновныеНачисления.StandardAttribute.Code</inputByString>
+  <inputByString>ChartOfCalculationTypes.ВКМ_ОсновныеНачисления.StandardAttribute.Description</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>DontUse</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <objectPresentation>
+    <key>ru</key>
+    <value>Основное начисление (вкм)</value>
+  </objectPresentation>
+  <codeLength>9</codeLength>
+  <descriptionLength>40</descriptionLength>
+  <codeType>String</codeType>
+  <codeAllowedLength>Variable</codeAllowedLength>
+  <defaultPresentation>AsDescription</defaultPresentation>
+  <editType>InDialog</editType>
+  <choiceMode>BothWays</choiceMode>
+  <dependenceOnCalculationTypes>OnActionPeriod</dependenceOnCalculationTypes>
+  <baseCalculationTypes>ChartOfCalculationTypes.ВКМ_ОсновныеНачисления</baseCalculationTypes>
+  <baseCalculationTypes>ChartOfCalculationTypes.ВКМ_ДополнительныеНачисления</baseCalculationTypes>
+  <actionPeriodUse>true</actionPeriodUse>
+  <predefined>
+    <items id="af8fcc91-2c25-4d87-b2a9-3b6261280af8">
+      <name>Оклад</name>
+      <description>Оклад</description>
+      <code xsi:type="core:StringValue">
+        <value>1</value>
+      </code>
+      <displaced>ChartOfCalculationTypes.ВКМ_ОсновныеНачисления.Отпуск</displaced>
+    </items>
+    <items id="066ee844-8427-42da-80bc-befbd1b9ebb0">
+      <name>Процент</name>
+      <description>Процент</description>
+      <code xsi:type="core:StringValue">
+        <value>3</value>
+      </code>
+    </items>
+    <items id="7bdb44d4-05bb-4ea1-8760-43ba3539f09f">
+      <name>Отпуск</name>
+      <description>Отпуск</description>
+      <code xsi:type="core:StringValue">
+        <value>2</value>
+      </code>
+      <base>ChartOfCalculationTypes.ВКМ_ОсновныеНачисления.Оклад</base>
+      <base>ChartOfCalculationTypes.ВКМ_ДополнительныеНачисления.Процент</base>
+      <base>ChartOfCalculationTypes.ВКМ_ДополнительныеНачисления.ФиксированнаяПремия</base>
+    </items>
+  </predefined>
+</mdclass:ChartOfCalculationTypes>
