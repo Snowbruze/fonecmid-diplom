@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <mdclass:ScheduledJob xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="29db0ca6-7cf3-4c50-8ff5-e1efee996fe2">
-  <name>ОтправкаУведомленийВТелеграмЧат</name>
+  <name>ВКМ_ОтправкаУведомленийВТелеграмЧат</name>
   <synonym>
     <key>ru</key>
-    <value>Отправка уведомлений в телеграм чат</value>
+    <value>Отправка уведомлений в телеграм чат (ВКМ)</value>
   </synonym>
   <methodName>CommonModule.ВКМ_Телеграм.ОтправкаУведомленийВТелеграмЧат</methodName>
   <predefined>true</predefined>
