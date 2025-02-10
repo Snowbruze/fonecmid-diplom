@@ -52,4 +52,5 @@
   <content>CommandGroup.ВКМ_Справочники</content>
   <content>CommandGroup.ВКМ_Документы</content>
   <content>CommandGroup.ВКМ_Регистры</content>
+  <content>ScheduledJob.ВКМ_ОтправкаУведомленийВТелеграмЧат</content>
 </mdclass:Subsystem>

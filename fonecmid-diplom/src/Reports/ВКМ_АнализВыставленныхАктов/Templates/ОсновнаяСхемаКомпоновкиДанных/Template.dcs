@@ -51,24 +51,12 @@
 				</v8:item>
 			</title>
 		</field>
-		<field xsi:type="DataSetFieldField">
-			<dataPath>Итого</dataPath>
-			<field>Итого</field>
-			<title xsi:type="v8:LocalStringType">
-				<v8:item>
-					<v8:lang>ru</v8:lang>
-					<v8:content>Итого</v8:content>
-				</v8:item>
-			</title>
-		</field>
 		<dataSource>ИсточникДанных1</dataSource>
 		<query>ВЫБРАТЬ
 	ЕСТЬNULL(ВКМ_ВыполненныеКлиентуРаботыОбороты.Клиент, ОбработкаЗаказовОбороты.Контрагент) КАК Контрагент,
 	ЕСТЬNULL(ВКМ_ВыполненныеКлиентуРаботыОбороты.Договор, ОбработкаЗаказовОбороты.Договор) КАК Договор,
 	ЕСТЬNULL(ВКМ_ВыполненныеКлиентуРаботыОбороты.СуммаКОплатеОборот, 0) КАК СуммаАбонентскойПлаты,
-	ЕСТЬNULL(ОбработкаЗаказовОбороты.СуммаЗаказаОборот, 0) КАК СуммаЗаказа,
-	ЕСТЬNULL(ВКМ_ВыполненныеКлиентуРаботыОбороты.СуммаКОплатеОборот, 0) +
-		ЕСТЬNULL(ОбработкаЗаказовОбороты.СуммаЗаказаОборот, 0) КАК Итого
+	ЕСТЬNULL(ОбработкаЗаказовОбороты.СуммаЗаказаОборот, 0) КАК СуммаЗаказа
 ИЗ
 	РегистрНакопления.ВКМ_ВыполненныеКлиентуРаботы.Обороты КАК ВКМ_ВыполненныеКлиентуРаботыОбороты
 		ПОЛНОЕ СОЕДИНЕНИЕ РегистрНакопления.ОбработкаЗаказов.Обороты КАК ОбработкаЗаказовОбороты
@@ -81,10 +69,6 @@
 	<totalField>
 		<dataPath>СуммаЗаказа</dataPath>
 		<expression>Сумма(СуммаЗаказа)</expression>
-	</totalField>
-	<totalField>
-		<dataPath>Итого</dataPath>
-		<expression>Сумма(Итого)</expression>
 	</totalField>
 	<parameter>
 		<name>НачалоПериода</name>
@@ -155,9 +139,6 @@
 				</dcsset:item>
 				<dcsset:item xsi:type="dcsset:SelectedItemField">
 					<dcsset:field>СуммаЗаказа</dcsset:field>
-				</dcsset:item>
-				<dcsset:item xsi:type="dcsset:SelectedItemField">
-					<dcsset:field>Итого</dcsset:field>
 				</dcsset:item>
 			</dcsset:selection>
 			<dcsset:filter>
